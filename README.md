@@ -1,4 +1,4 @@
-# Made-a-device-that-can-reduce-COVID-19-Spread
+# Location Finder Device with Full Stack WebApp to reduce COVID-19 spread
 
 A pocket size device, in which if a person come under 2 meter distance with someone, presses a button on this device , which will send the location coordinates of the person with date-time in to the person's own unique database. To access and create database person has to register on this website : https://findloc.herokuapp.com..
 
