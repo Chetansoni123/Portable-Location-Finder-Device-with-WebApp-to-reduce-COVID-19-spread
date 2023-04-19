@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %} em var {% endblock %}
+
+
+
+{% block content %}
+
+{% for item in kaka %}
+		<p> <font size="5"><font color = "#006994"> Please Click on 'Verify' for verification of Email. </p>
+		<p><a href="https://findloc.herokuapp.com/verifyml/{{item}}"><font size="6"><font color = "#00CCCC">Verify</a></p>
+{% endfor %}
+
+{% endblock %}
+
+
+

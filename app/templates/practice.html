@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{{url_for('static', filename ='styles/home.css')}}">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#example1{
+
+background-image: url({{url_for('static', filename='images/stayhome.jpg')}});
+background-repeat: no-repeat;
+background-size : cover;
+background-width : 700px;
+background-height : 400px;
+
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img{
+  /* The image used */
+  background-image: url({{url_for('static', filename = 'images/lightblue.jpg')}});
+
+
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  
+ 
+
+
+}
+
+/* Add styles to the form container */
+.container {
+  position: center;
+  margin: 20px;
+  max-width: 700px;
+  padding: 16px;
+  background-color: lightblue ;
+  opacity: 0.8;
+}
+
+.containers {
+  position: center;
+  margin: 20px;
+  max-width: 700px;
+  padding: 16px;
+  background-color: lightblue ;
+  opacity: 0.8;
+}
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: ;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: brown;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+
+<body>
+
+<div id = "example1" class = "container-fluid">
+
+  <!-- Start your project here--> 
+<div class="container-fluid" align = "left">
+ <image src = "{{url_for('static', filename = 'images/socialdistance.jpg')}}" width = "100%" height = "400" >
+</div>
+
+
+
+<h1> <font color="yellow"> Enter username, Password and Database to create your own database.. </h1>
+<div class="container-fluid" align="center">
+  <form action="#" class="container">
+    <h1><font color = "darkblue">Sign Up</h1>
+
+    <label for="email"><b><font size = "4">Username</b></label>
+    <p><input type="text" placeholder="Enter Username" name="email" required></p>
+
+    <label for="psw"><b><font size = "4" >Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw"><b><font size="4">Enter your unique database name</b></label>
+    <input type="password" placeholder="Enter DB Name" name="dbname" required>
+
+    <button type="submit" class="btn"><font color = "darkblue"><font size = "5">Register</button>
+  </form>
+
+</div>
+  <div class="container-fluid" align="center">
+
+      <form action="#" class="containers">
+    <h1><font color = "darkblue"><font size= "5">Already Registered ! Login here to get in to Database..</h1>
+
+    <label for="email"><b><font size = "4">Username</b></label>
+    <p><input type="text" placeholder="Enter Username" name="email" required></p>
+
+    <label for="psw"><b><font size = "4" >Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn"><font color = "darkblue"><font size = "5">Login</button>
+  </form>
+  
+
+</div>
+
+</div>
+
+</body>
+
+</html>

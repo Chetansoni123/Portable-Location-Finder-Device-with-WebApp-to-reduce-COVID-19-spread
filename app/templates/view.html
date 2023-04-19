@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>view page</title>
+
+
+</head>
+<body>
+
+
+{% for item in values %}
+
+<p> <font color = "green"> Date : <font color="DodgerBlue"> {{item[1]}}  <font color = "green">Time : <font color="DodgerBlue"> {{item[0]}}<font color = "green"> Latitude : <font color="DodgerBlue">{{item[2]}} <font color = "green"> Longitude : <font color="DodgerBlue"> {{item[3]}} <font color = "green"> Accuracy : <font color="DodgerBlue"> {{item[4]}} </p>
+
+{% endfor %}
+
+</body>
+</html>

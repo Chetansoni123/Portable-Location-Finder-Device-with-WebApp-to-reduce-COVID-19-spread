@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %} reg em {% endblock %}
+
+{% block style %}
+
+body{
+	background-image: url({{url_for('static', filename = 'images/stayhome.jpg')}})
+}
+
+{% endblock %}
+
+{% block content %}
+<h1 style="color:orange";> An Email has been sent to your email id for <font color = "yellow">VERIFICATION!</h1>
+<h3 style="color:orange"> Please Click on <font color = "yellow">VERIFY <font color="orange"> button to verify your email. </h3>
+
+{% endblock %}
+

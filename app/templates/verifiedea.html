@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %} ver {% endblock %}
+
+{% block style %}
+
+body{
+	background-image: url({{url_for('static', filename = 'images/stayhome.jpg')}})
+}
+
+{% endblock %}
+
+{% block content %}
+<h1><font color ="yellow">Mail has been Verified !</h2>
+	<h2> <font color = "#00CCCC"> Thankyou for registration <font color ="yellow"> {{value}} <font color = "#00CCCC"> :)</h3>
+
+{% endblock %}
